@@ -50,9 +50,9 @@ function createShowingTable(data) {
 		var row = document.createElement("div");
 		var span = document.createElement("div");
 		var table = document.createElement("table");
-		row.setAttribute("className", "row-fluid");
-		span.setAttribute("className", "span4");
-		table.setAttribute("className", "table");
+		row.className = "row-fluid";
+		span.className = "span4";
+		table.className = "table";
 
 		row.appendChild(span);
 		span.appendChild(table);
@@ -61,7 +61,7 @@ function createShowingTable(data) {
 			var tr = document.createElement("tr");
 			var th = document.createElement("th");
 			var td = document.createElement("td");
-			tr.setAttribute("class", tr[j])
+			tr.className = trc[j];
 			th.innerHTML = showingArray[j];
 			td.innerHTML = orderBase[i][headArray[index[j]]];
 			tr.appendChild(th);
